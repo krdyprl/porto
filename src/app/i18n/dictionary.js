@@ -7,10 +7,8 @@ export const dictionary = {
       build: "Keahlian",
       experience: "Pengalaman",
       projects: "Proyek",
-      leadership: "Kepemimpinan",
       achievements: "Prestasi",
       education: "Pendidikan",
-      development: "Pelatihan",
       contact: "Kontak",
     },
     hero: {
@@ -25,6 +23,7 @@ export const dictionary = {
     },
     experience: {
       title: "Pengalaman",
+      work: "Peran Profesional",
       subtitle: "Peran yang saya jalani di kampus dan industri.",
     },
     projects: {
@@ -71,10 +70,8 @@ export const dictionary = {
       build: "Skills",
       experience: "Experience",
       projects: "Projects",
-      leadership: "Leadership",
       achievements: "Achievements",
       education: "Education",
-      development: "Courses",
       contact: "Contact",
     },
     hero: {
@@ -89,6 +86,7 @@ export const dictionary = {
     },
     experience: {
       title: "Experience",
+      work: "Professional Roles",
       subtitle: "Roles I have taken on in academia and industry.",
     },
     projects: {

@@ -48,8 +48,9 @@ src/
     components/
       RichText.js            # render teks **tebal**
       sections/              # Hero, About, WhatIBuild, Experience, Projects,
-                             # Leadership, Achievements, Education,
-                             # Development, Contact
+                             # Achievements, Education, Contact
+                             # (Experience memuat peran profesional,
+                             #  kepemimpinan, dan pengembangan profesional)
       Techstack.js           # marquee logo, dipakai di dalam WhatIBuild
       Navbar, Footer, ThemeToggle, LangToggle, dll
     page.js                  # rakit semua section

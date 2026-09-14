@@ -8,10 +8,8 @@ import {
   LuCode,
   LuBriefcase,
   LuFolder,
-  LuUsers,
   LuTrophy,
   LuGraduationCap,
-  LuBookOpen,
   LuSend,
   LuMenu,
   LuX,
@@ -31,10 +29,8 @@ const NAV = [
   { id: "build", icon: LuCode, key: "build" },
   { id: "experience", icon: LuBriefcase, key: "experience" },
   { id: "projects", icon: LuFolder, key: "projects" },
-  { id: "leadership", icon: LuUsers, key: "leadership" },
   { id: "achievements", icon: LuTrophy, key: "achievements" },
   { id: "education", icon: LuGraduationCap, key: "education" },
-  { id: "development", icon: LuBookOpen, key: "development" },
   { id: "contact", icon: LuSend, key: "contact" },
 ];
 
