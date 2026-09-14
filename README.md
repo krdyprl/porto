@@ -25,6 +25,8 @@ Teks dwibahasa ditulis `{ id: "...", en: "..." }`. Label UI (menu, tombol) ada d
 
 - **Tebal dalam paragraf**: tulis `**teks**` di data, lalu render pakai komponen
   [`RichText`](src/app/components/RichText.js).
+- **File CV**: taruh PDF-nya di `public/`, lalu isi `cvUrl` di `portfolio.js`
+  (mis. `"/Kardynan_Parulian_CV_Academy.pdf"`). Tombol "Unduh CV" di hero memakai nilai ini.
 - **Gambar proyek**: taruh di `public/images/`, lalu isi field `image` (mis. `"/images/project1.png"`).
 - **Icon techstack baru**: tambahkan di peta `ICONS` pada `src/app/components/sections/Techstack.js`.
 - **URL situs**: ganti `siteUrl` di `portfolio.js` (dipakai untuk SEO).

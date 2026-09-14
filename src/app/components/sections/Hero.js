@@ -52,6 +52,9 @@ export default function Hero() {
 
       <a
         href={profile.cvUrl}
+        download
+        target="_blank"
+        rel="noopener noreferrer"
         className="mt-8 inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium bg-foreground text-background hover:opacity-90 hover:scale-[1.03] transition-all"
       >
         <LuArrowDownToLine className="w-4 h-4" />

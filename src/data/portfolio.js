@@ -42,7 +42,7 @@ export const profile = {
     id: "Belum tersedia untuk direkrut",
     en: "Not available for hire",
   },
-  cvUrl: "#", // ganti dengan link CV Anda
+  cvUrl: "/Kardynan_Parulian_CV_Academy.pdf", // file ada di public/
 };
 
 export const about = {
