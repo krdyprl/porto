@@ -17,11 +17,14 @@ npm run lint     # cek kode
 ## Edit konten
 
 Semua data pribadi ada di satu file: [`src/data/portfolio.js`](src/data/portfolio.js)
-— nama, bio, techstack, proyek, prestasi, kontak, link CV.
+— profil, bio, keahlian, pengalaman kerja, proyek, kepemimpinan, prestasi,
+pendidikan, pengembangan diri, bahasa, dan kontak.
 
 Teks dwibahasa ditulis `{ id: "...", en: "..." }`. Label UI (menu, tombol) ada di
 [`src/app/i18n/dictionary.js`](src/app/i18n/dictionary.js).
 
+- **Tebal dalam paragraf**: tulis `**teks**` di data, lalu render pakai komponen
+  [`RichText`](src/app/components/RichText.js).
 - **Gambar proyek**: taruh di `public/images/`, lalu isi field `image` (mis. `"/images/project1.png"`).
 - **Icon techstack baru**: tambahkan di peta `ICONS` pada `src/app/components/sections/Techstack.js`.
 - **URL situs**: ganti `siteUrl` di `portfolio.js` (dipakai untuk SEO).
@@ -41,7 +44,11 @@ src/
     i18n/                    # provider bahasa + dictionary UI
     lib/                     # helper animasi
     components/
-      sections/              # Hero, About, Techstack, Projects, Achievements, Contact
+      RichText.js            # render teks **tebal**
+      sections/              # Hero, About, WhatIBuild, Experience, Projects,
+                             # Leadership, Achievements, Education,
+                             # Development, Contact
+      Techstack.js           # marquee logo, dipakai di dalam WhatIBuild
       Navbar, Footer, ThemeToggle, LangToggle, dll
     page.js                  # rakit semua section
     layout.js                # provider + dark mode + SEO

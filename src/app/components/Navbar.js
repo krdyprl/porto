@@ -6,8 +6,12 @@ import {
   LuHouse,
   LuUser,
   LuCode,
+  LuBriefcase,
   LuFolder,
+  LuUsers,
   LuTrophy,
+  LuGraduationCap,
+  LuBookOpen,
   LuSend,
   LuMenu,
   LuX,
@@ -24,9 +28,13 @@ import { profile } from "@/data/portfolio";
 const NAV = [
   { id: "home", icon: LuHouse, key: "home" },
   { id: "about", icon: LuUser, key: "about" },
-  { id: "stack", icon: LuCode, key: "stack" },
+  { id: "build", icon: LuCode, key: "build" },
+  { id: "experience", icon: LuBriefcase, key: "experience" },
   { id: "projects", icon: LuFolder, key: "projects" },
+  { id: "leadership", icon: LuUsers, key: "leadership" },
   { id: "achievements", icon: LuTrophy, key: "achievements" },
+  { id: "education", icon: LuGraduationCap, key: "education" },
+  { id: "development", icon: LuBookOpen, key: "development" },
   { id: "contact", icon: LuSend, key: "contact" },
 ];
 
@@ -125,7 +133,7 @@ export default function Navbar() {
       {/* Desktop sidebar */}
       <aside
         ref={asideRef}
-        className="hidden md:flex flex-col gap-8 w-72 shrink-0 py-10 sticky top-0 h-screen"
+        className="hidden md:flex flex-col gap-8 w-72 shrink-0 py-10 sticky top-0 h-screen overflow-y-auto"
       >
         <div className="flex items-start justify-between gap-2" data-stagger>
           {Brand}

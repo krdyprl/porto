@@ -2,6 +2,7 @@
 import { LuTrophy, LuExternalLink } from "react-icons/lu";
 import { useLanguage } from "../../i18n/LanguageProvider";
 import Reveal from "../Reveal";
+import RichText from "../RichText";
 import SplitHeading from "../SplitHeading";
 import { achievements } from "@/data/portfolio";
 
@@ -33,9 +34,11 @@ export default function Achievements() {
                 <h4 className="font-semibold">{pick(a.title)}</h4>
                 {a.date && <span className="text-xs opacity-50">{a.date}</span>}
               </div>
-              {a.issuer && <p className="text-sm opacity-70">{a.issuer}</p>}
+              {a.issuer && <p className="text-sm opacity-70">{pick(a.issuer)}</p>}
               {pick(a.description) && (
-                <p className="mt-1 text-sm opacity-70">{pick(a.description)}</p>
+                <p className="mt-1 text-sm opacity-70">
+                  <RichText text={pick(a.description)} />
+                </p>
               )}
               {a.url && (
                 <a

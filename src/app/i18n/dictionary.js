@@ -4,9 +4,13 @@ export const dictionary = {
     nav: {
       home: "Beranda",
       about: "Tentang",
-      stack: "Teknologi",
+      build: "Keahlian",
+      experience: "Pengalaman",
       projects: "Proyek",
+      leadership: "Kepemimpinan",
       achievements: "Prestasi",
+      education: "Pendidikan",
+      development: "Pelatihan",
       contact: "Kontak",
     },
     hero: {
@@ -15,22 +19,41 @@ export const dictionary = {
     about: {
       title: "Tentang Saya",
     },
-    stack: {
-      title: "Teknologi Saya",
-      subtitle: "Tools dan teknologi yang saya gunakan sehari-hari.",
+    build: {
+      title: "Yang Saya Bangun",
+      subtitle: "Area yang saya kerjakan sehari-hari.",
+    },
+    experience: {
+      title: "Pengalaman",
+      subtitle: "Peran yang saya jalani di kampus dan industri.",
     },
     projects: {
-      title: "Proyek",
-      team: "Bersama Tim",
-      teamSubtitle: "Proyek yang saya kerjakan bersama tim di kantor.",
-      self: "Proyek Pribadi",
-      selfSubtitle: "Proyek yang saya kerjakan sendiri.",
-      visit: "Kunjungi",
+      title: "Proyek Terpilih",
+      subtitle: "Proyek yang saya bangun — dari kompetisi dan riset sampai pengabdian masyarakat.",
+      repo: "Lihat Repository",
+      focus: "Fokus",
+      role: "Peran",
+    },
+    leadership: {
+      title: "Kepemimpinan & Komunitas",
+      subtitle: "Menginisiasi dan memimpin hal-hal yang berdampak bagi orang lain.",
+      other: "Peran Teknis Lainnya",
     },
     achievements: {
       title: "Prestasi & Pencapaian",
-      subtitle: "Penghargaan, sertifikasi, dan pencapaian yang pernah saya raih.",
+      subtitle: "Penghargaan, kompetisi, dan pencapaian yang pernah saya raih.",
       proof: "Lihat bukti",
+    },
+    education: {
+      title: "Pendidikan",
+      subtitle: "Latar belakang akademik dan kemampuan bahasa.",
+      gpa: "IPK",
+      coursework: "Mata Kuliah Relevan",
+      languages: "Bahasa",
+    },
+    development: {
+      title: "Pengembangan Profesional",
+      subtitle: "Kursus, workshop, dan pelatihan yang saya ikuti.",
     },
     contact: {
       title: "Kontak",
@@ -45,9 +68,13 @@ export const dictionary = {
     nav: {
       home: "Home",
       about: "About",
-      stack: "Stack",
+      build: "Skills",
+      experience: "Experience",
       projects: "Projects",
+      leadership: "Leadership",
       achievements: "Achievements",
+      education: "Education",
+      development: "Courses",
       contact: "Contact",
     },
     hero: {
@@ -56,22 +83,41 @@ export const dictionary = {
     about: {
       title: "About Me",
     },
-    stack: {
-      title: "My Tech Stack",
-      subtitle: "Tools and technologies I use day to day.",
+    build: {
+      title: "What I Build",
+      subtitle: "The areas I work in day to day.",
+    },
+    experience: {
+      title: "Experience",
+      subtitle: "Roles I have taken on in academia and industry.",
     },
     projects: {
-      title: "Projects",
-      team: "With a Team",
-      teamSubtitle: "Projects I built together with my team at work.",
-      self: "Personal Projects",
-      selfSubtitle: "Projects I built on my own.",
-      visit: "Visit",
+      title: "Selected Projects",
+      subtitle: "Projects I have built — from competitions and research to community service.",
+      repo: "View Repository",
+      focus: "Focus",
+      role: "Role",
+    },
+    leadership: {
+      title: "Leadership & Community",
+      subtitle: "Initiating and leading work that has impact on others.",
+      other: "Other Technical Roles",
     },
     achievements: {
       title: "Achievements & Awards",
-      subtitle: "Awards, certifications, and milestones I've earned along the way.",
+      subtitle: "Awards, competitions, and milestones I've earned along the way.",
       proof: "View proof",
+    },
+    education: {
+      title: "Education",
+      subtitle: "Academic background and language proficiency.",
+      gpa: "GPA",
+      coursework: "Relevant Coursework",
+      languages: "Languages",
+    },
+    development: {
+      title: "Professional Development",
+      subtitle: "Courses, workshops, and training I have completed.",
     },
     contact: {
       title: "Contact",

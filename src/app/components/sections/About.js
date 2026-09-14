@@ -1,5 +1,6 @@
 "use client";
 import { useLanguage } from "../../i18n/LanguageProvider";
+import RichText from "../RichText";
 import SplitHeading from "../SplitHeading";
 import { about } from "@/data/portfolio";
 
@@ -16,7 +17,7 @@ export default function About() {
       <div className="space-y-4 max-w-2xl">
         {about.paragraphs[lang].map((p, i) => (
           <p key={i} className="opacity-80 leading-relaxed">
-            {p}
+            <RichText text={p} />
           </p>
         ))}
       </div>

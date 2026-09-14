@@ -7,15 +7,18 @@ import {
   SiExpress,
   SiLaravel,
   SiTypescript,
-  SiPostgresql,
   SiJavascript,
-  SiBootstrap,
+  SiPython,
+  SiKotlin,
+  SiPandas,
+  SiPostgresql,
   SiMysql,
   SiMongodb,
+  SiGit,
+  SiLinux,
+  SiBootstrap,
 } from "react-icons/si";
 import { LuCode } from "react-icons/lu";
-import { useLanguage } from "../../i18n/LanguageProvider";
-import SplitHeading from "../SplitHeading";
 import { techstack } from "@/data/portfolio";
 
 // peta key (di portfolio.js) -> icon. Tambah di sini kalau pakai tech baru.
@@ -28,9 +31,14 @@ const ICONS = {
   laravel: SiLaravel,
   typescript: SiTypescript,
   javascript: SiJavascript,
+  python: SiPython,
+  kotlin: SiKotlin,
+  pandas: SiPandas,
   postgres: SiPostgresql,
   mysql: SiMysql,
   mongodb: SiMongodb,
+  git: SiGit,
+  linux: SiLinux,
   bootstrap: SiBootstrap,
 };
 
@@ -61,25 +69,16 @@ function MarqueeRow({ items, reverse }) {
   );
 }
 
+// Hanya marquee-nya saja (tanpa <section>), dipakai di dalam WhatIBuild.
 export default function Techstack() {
-  const { t, lang } = useLanguage();
   const half = Math.ceil(techstack.length / 2);
   const row1 = techstack.slice(0, half);
   const row2 = techstack.slice(half);
 
   return (
-    <section id="stack" className="wrapper py-16 scroll-mt-16">
-      <SplitHeading
-        key={lang}
-        className="text-2xl sm:text-3xl font-semibold tracking-tight mb-2"
-      >
-        {t.stack.title}
-      </SplitHeading>
-      <p className="opacity-70 mb-8">{t.stack.subtitle}</p>
-      <div className="flex flex-col gap-3">
-        <MarqueeRow items={row1} />
-        <MarqueeRow items={row2.length ? row2 : row1} reverse />
-      </div>
-    </section>
+    <div className="flex flex-col gap-3">
+      <MarqueeRow items={row1} />
+      <MarqueeRow items={row2.length ? row2 : row1} reverse />
+    </div>
   );
 }

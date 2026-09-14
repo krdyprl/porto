@@ -1,7 +1,7 @@
 "use client";
 import { FaGithub, FaLinkedin, FaXTwitter, FaFacebook, FaInstagram } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
-import { LuLink } from "react-icons/lu";
+import { LuLink, LuPhone } from "react-icons/lu";
 import { useLanguage } from "../../i18n/LanguageProvider";
 import SplitHeading from "../SplitHeading";
 import { contacts } from "@/data/portfolio";
@@ -13,6 +13,7 @@ const ICONS = {
   facebook: FaFacebook,
   instagram: FaInstagram,
   email: SiGmail,
+  phone: LuPhone,
 };
 
 export default function Contact() {
