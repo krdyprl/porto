@@ -1,5 +1,7 @@
 # Portofolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4eb0e117-3d48-480e-969d-d2aea119c912/deploy-status)](https://app.netlify.com/projects/prlkrdy/deploys)
+
 Website portofolio pribadi. Satu halaman, dwibahasa (ID/EN), ada dark mode.
 Dibuat pakai Next.js + Tailwind CSS.
 
@@ -26,8 +28,9 @@ Teks dwibahasa ditulis `{ id: "...", en: "..." }`. Label UI (menu, tombol) ada d
 
 ## Deploy
 
-Repo ini tersambung ke Netlify. Setiap push ke branch `main` akan otomatis
-build & deploy. Konfigurasi build ada di [`netlify.toml`](netlify.toml).
+Repo ini tersambung ke Netlify ([dashboard](https://app.netlify.com/projects/prlkrdy/deploys)).
+Setiap push ke branch `main` akan otomatis build & deploy. Konfigurasi build ada di
+[`netlify.toml`](netlify.toml).
 
 ## Struktur
 

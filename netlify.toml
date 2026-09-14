@@ -1,3 +1,8 @@
 [build]
   command = "npm run build"
   publish = ".next"
+
+# Pin versi Node. Next.js 15.5 butuh Node >= 18.18, dan ini menjaga
+# agar build di Netlify memakai versi yang sama seperti di lokal.
+[build.environment]
+  NODE_VERSION = "22"
